@@ -16,13 +16,13 @@
 #
  
 # 1:GAMEDIR, VERSIONFILE
-1:000_FilterExtensions, FilterExtensions.version, FilterExtension
+1:000_FilterExtensions, FilterExtension.version, FilterExtension
 
 # 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
-2:FilterExtensions,FilterExtension/FilterExtensions.csproj,FilterExtensions.version,GameData/000_FilterExtensions/Plugins
+2:FilterExtensions,FilterExtension/FilterExtensions.csproj,FilterExtension.version,GameData/000_FilterExtensions/Plugins
 
 # 3:SOURCEFILE, DESTDIR
-3:FilterExtensions.version,GameData/000_FilterExtensions
+3:FilterExtension.version,GameData/000_FilterExtensions
 3:License.txt,GameData/000_FilterExtensions
 
 # 4:SOURCDIR, DESTDIR
