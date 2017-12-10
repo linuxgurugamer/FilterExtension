@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterExtensions", "FilterExtension\FilterExtensions.csproj", "{8633A568-654E-409D-A7B2-95839F2EBD3D}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterExtensions", "FilterE
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FE_Testing", "FE_Testing\FE_Testing.csproj", "{F544880B-94BB-48C7-9331-76452A1AE9B7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{1F1AA972-BB34-4EFB-B119-87F07AED80B0}"
+	ProjectSection(SolutionItems) = preProject
+		buildRelease.bat = buildRelease.bat
+		deploy.bat = deploy.bat
+		FilterExtension.version = FilterExtension.version
+		jenkins.txt = jenkins.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,5 +35,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E57A012-ACFD-426A-9BF3-D2CB0D9B9138}
 	EndGlobalSection
 EndGlobal
