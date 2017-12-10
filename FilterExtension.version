@@ -1,6 +1,6 @@
 {
   "NAME": "Filter Extensions",
-  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FilterExtension/master/GameData/000_FilterExtensions/FilterExtensions.version",
+  "URL": "https://raw.githubusercontent.com/linuxgurugamer/FilterExtension/master/GameData/000_FilterExtensions/FilterExtension.version",
   "DOWNLOAD": "https://github.com/LinuxGuruGamer/FilterExtension/releases",
   "VERSION": {
     "MAJOR": 3,
