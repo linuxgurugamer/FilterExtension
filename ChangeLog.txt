@@ -5,11 +5,14 @@
 	Release
 
 3.2.0.2
-	updated subcategories:
-		Subcategories_Science
-		Subcategories_Fuel
+	Updated subcategories:
+		Subcategories_Science		
 		SubCategories_Landing
-	Updated caterories:
+	Updated categories:
 		Mod_NearFutureTechnologies
 		Mod_B9
+
+	New category:
 		00_Fuel
+	New subcategory:
+		Subcategories_Fuel
