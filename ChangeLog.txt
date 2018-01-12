@@ -16,3 +16,7 @@
 		00_Fuel
 	New subcategory:
 		Subcategories_Fuel
+
+3.2.0.3
+	Added subcategory for ModuleEnginesAJEJet
+	Updated NamesAndIcons and 02_Engines to support the new AJE Jets
