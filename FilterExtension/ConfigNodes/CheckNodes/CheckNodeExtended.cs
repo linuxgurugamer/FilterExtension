@@ -29,6 +29,24 @@ namespace FilterExtensions.ConfigNodes.CheckNodes
     }
 
     /// <summary>
+    /// part name check
+    /// </summary>
+    public class CheckName : CheckNodeExtended
+    {
+        public const string ID = "name";
+        public override string CheckID { get => ID; }
+        bool exact = true;
+        public CheckName(ConfigNode node) : base(node)
+        {
+            if (node.HasValue("exact"))
+                exact = Exact;
+        }
+        public override bool CheckResult(AvailablePart part, int depth = 0)
+        {
+            return Invert ^ PartType.CheckName(part, Values, exact);
+        }
+    }
+    /// <summary>
     /// part module name
     /// </summary>
     public class CheckModuleName : CheckNodeExtended
@@ -112,6 +130,19 @@ namespace FilterExtensions.ConfigNodes.CheckNodes
         }
     }
 
+    /// <summary>
+    /// checks engine type
+    /// </summary>
+    public class CheckEngineType : CheckNodeExtended
+    {
+        public const string ID = "engineType";
+        public override string CheckID { get => ID; }
+        public CheckEngineType(ConfigNode node) : base(node) { }
+        public override bool CheckResult(AvailablePart part, int depth = 0)
+        {
+            return Invert ^ PartType.CheckEngineType(part, Values, Contains, Exact);
+        }
+    }
     public class CheckGroup : CheckNode
     {
         public const string ID = "check";

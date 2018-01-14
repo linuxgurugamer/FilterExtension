@@ -5,7 +5,7 @@ namespace FilterExtensions
 {
     internal static class Logger
     {
-        public static readonly Version version = new Version(3, 0, 1);
+        public static readonly Version version = new Version(3,2,0,3);
         public static readonly string versionString = $"[Filter Extensions {version}]:";
 
         internal enum LogLevel

@@ -37,6 +37,8 @@
                     return new CheckResource(node);
                 case CheckPropellant.ID:
                     return new CheckPropellant(node);
+                case CheckEngineType.ID:
+                    return new CheckEngineType(node);
                 case CheckGroup.ID:
                     return new CheckGroup(node);
                 case CheckSize.ID:
@@ -55,6 +57,7 @@
                     return new CheckCost(node);
                 default:
                 Logger.Log($"unknown check type {checkID}", Logger.LogLevel.Error);
+                    Logger.Log($"CheckEnginetype.ID: " + CheckEngineType.ID, Logger.LogLevel.Error);
                     return null;
             }
         }

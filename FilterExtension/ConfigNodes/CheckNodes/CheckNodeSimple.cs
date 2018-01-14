@@ -6,10 +6,11 @@ using System.Text;
 
 namespace FilterExtensions.ConfigNodes.CheckNodes
 {
+#if false
     /// <summary>
     /// part name check
     /// </summary>
-    public class CheckName : CheckNode
+    public class CheckName : CheckNodeExtended
     {
         public const string ID = "name";
         public override string CheckID { get => ID; }
@@ -19,7 +20,7 @@ namespace FilterExtensions.ConfigNodes.CheckNodes
             return Invert ^ PartType.CheckName(part, Values);
         }
     }
-
+#endif
     /// <summary>
     /// Part title check
     /// </summary>
