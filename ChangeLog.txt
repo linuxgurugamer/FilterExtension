@@ -1,0 +1,34 @@
+
+3.2.0
+	Simple recompile for 1.3.1, NO LOCALIZATION, beta
+
+3.2.0.1
+	Release
+
+3.2.0.2
+	Updated subcategories:
+		Subcategories_Science		
+		SubCategories_Landing
+	Updated categories:
+		Mod_NearFutureTechnologies
+		Mod_B9
+
+	New category:
+		00_Fuel
+	New subcategory:
+		Subcategories_Fuel
+
+3.2.0.3
+	Added subcategory for ModuleEnginesAJEJet
+	Updated NamesAndIcons and 02_Engines to support the new AJE Jets
+	Added new check to support checking the engine type
+	Added ability to filter on partial part name
+	Added configs for AJE jets and propellers
+	Added configs for Airplane+ propellers
+	Added new categories for engines:
+		Prop engines
+		Electric prop engines
+	Added some additional filters for the various Firespitter engines
+
+3.2.3
+	updated for 1.4.1

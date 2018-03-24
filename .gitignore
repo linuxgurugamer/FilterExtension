@@ -197,3 +197,5 @@ FakesAssemblies/
 
 PartDatabase.cfg
 Physics.cfg
+*.dll
+.vs
