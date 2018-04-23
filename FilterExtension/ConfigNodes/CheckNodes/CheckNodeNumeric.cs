@@ -128,4 +128,49 @@ namespace FilterExtensions.ConfigNodes.CheckNodes
             return Invert ^ PartType.CheckTemperature(part, Values, Equality);
         }
     }
+
+	/// <summary>
+	/// checks part engine thrust
+	/// </summary>
+	public class CheckThrust : CheckNodeNumeric
+	{
+		public const string ID = "thrust";
+		public override string CheckID { get => ID; }
+
+		public CheckThrust(ConfigNode node) : base(node) { }
+		public override bool CheckResult(AvailablePart part, int depth = 0)
+		{
+			return Invert ^ PartType.CheckThrust(part, Values, Equality);
+		}
+	}
+
+	/// <summary>
+	/// checks part engine ISP Atmo
+	/// </summary>
+	public class CheckISP_Atmo : CheckNodeNumeric
+	{
+		public const string ID = "isp_atm";
+		public override string CheckID { get => ID; }
+
+		public CheckISP_Atmo(ConfigNode node) : base(node) { }
+		public override bool CheckResult(AvailablePart part, int depth = 0)
+		{
+			return Invert ^ PartType.CheckISP(part, Values, Equality, false);
+		}
+	}
+
+    /// <summary>
+    /// checks part engine ISP Vac
+    /// </summary>
+    public class CheckISP_Vac : CheckNodeNumeric
+    {
+        public const string ID = "isp_vac";
+        public override string CheckID { get => ID; }
+
+        public CheckISP_Vac(ConfigNode node) : base(node) { }
+        public override bool CheckResult(AvailablePart part, int depth = 0)
+        {
+            return Invert ^ PartType.CheckISP(part, Values, Equality, true);
+        }
+    }
 }

@@ -39,6 +39,12 @@
                     return new CheckPropellant(node);
                 case CheckEngineType.ID:
                     return new CheckEngineType(node);
+				case CheckThrust.ID:
+					return new CheckThrust(node);
+                case CheckISP_Atmo.ID:
+                    return new CheckISP_Atmo(node);
+                case CheckISP_Vac.ID:
+                    return new CheckISP_Vac(node);
                 case CheckGroup.ID:
                     return new CheckGroup(node);
                 case CheckSize.ID:

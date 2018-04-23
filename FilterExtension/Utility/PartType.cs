@@ -766,6 +766,101 @@ namespace FilterExtensions.Utility
             return false;
         }
 
+		/// <summary>
+		/// check the thrust of the engine
+		/// </summary>
+		public static bool CheckThrust(AvailablePart part, string[] value, ConfigNodes.CheckNodes.CompareType equality = ConfigNodes.CheckNodes.CompareType.Equals)
+		{
+		    if (!IsEngine(part))
+		    {
+		        return false;
+		    }
+			if (part.partPrefab == null)
+			{
+				return false;
+			}
+		    foreach (var engine in part.partPrefab.Modules.OfType<ModuleEngines>())
+		    {
+		        if (equality == ConfigNodes.CheckNodes.CompareType.Equals)
+		        {
+		            return value.Contains(engine.maxThrust.ToString(), StringComparer.OrdinalIgnoreCase);
+		        }
+		        else
+		        {
+		            if (value.Length > 1)
+		            {
+		                Logger.Log($"Thrust comparisons against multiple values when not using Equals only use the first value. Value list is: {string.Join(", ", value)}", Logger.LogLevel.Warn);
+		            }
+		            if (double.TryParse(value[0], out double d))
+		            {
+		                if (equality == ConfigNodes.CheckNodes.CompareType.GreaterThan && engine.maxThrust > d)
+		                {
+		                    return true;
+		                }
+		                else if (equality == ConfigNodes.CheckNodes.CompareType.LessThan && engine.maxThrust < d)
+		                {
+		                    return true;
+		                }
+		            }
+		        }
+		    }
+			return false;
+		}
+
+		/// <summary>
+		/// check the ISP of the engine
+		/// </summary>
+		public static bool CheckISP(AvailablePart part, string[] value, ConfigNodes.CheckNodes.CompareType equality = ConfigNodes.CheckNodes.CompareType.Equals, bool vacuum = false)
+		{
+		    if (!IsEngine(part))
+		    {
+		        return false;
+		    }
+		    if (part.partPrefab == null)
+		    {
+		        return false;
+		    }
+		    foreach (var engine in part.partPrefab.Modules.OfType<ModuleEngines>())
+		    {
+		        float atm = engine.atmosphereCurve.Evaluate(1);
+		        float vac = engine.atmosphereCurve.Evaluate(0);
+		        
+		        float isp;
+		        if (vacuum)
+		        {
+		            isp = vac;
+		        }
+		        else
+		        {
+		            isp = atm;
+		        }
+		        
+		        if (equality == ConfigNodes.CheckNodes.CompareType.Equals)
+		        {
+		            return value.Contains(isp.ToString(), StringComparer.OrdinalIgnoreCase);
+		        }
+		        else
+		        {
+		            if (value.Length > 1)
+		            {
+		                Logger.Log($"ISP comparisons against multiple values when not using Equals only use the first value. Value list is: {string.Join(", ", value)}", Logger.LogLevel.Warn);
+		            }
+		            if (double.TryParse(value[0], out double d))
+		            {
+		                if (equality == ConfigNodes.CheckNodes.CompareType.GreaterThan && isp > d)
+		                {
+		                    return true;
+		                }
+		                else if (equality == ConfigNodes.CheckNodes.CompareType.LessThan && isp < d)
+		                {
+		                    return true;
+		                }
+		            }
+		        }
+		    }
+		    return false;
+		}
+
         /// <summary>
         /// bulkhead profiles used to id part shapes for stock editor. parts with no profiles get dumped in srf
         /// </summary>
