@@ -43,4 +43,4 @@
 		No point keeping size1p5 and size5 icons, since there's stock versions now
 
 3.2.2.1
-	Added alternate configs
+	Added patch to fix categories on many of the stock parts
