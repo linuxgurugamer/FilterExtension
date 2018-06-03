@@ -44,3 +44,6 @@
 
 3.2.2.1
 	Added patch to fix categories on many of the stock parts
+
+3.2.2.2
+	Update to fix bad ckan entry
