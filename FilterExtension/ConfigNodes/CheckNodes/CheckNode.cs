@@ -7,6 +7,7 @@ namespace FilterExtensions.ConfigNodes.CheckNodes
         Equals, // default
         LessThan,
         GreaterThan,
+        Between,
         String
     }
 

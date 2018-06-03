@@ -570,7 +570,7 @@ namespace FilterExtensions.Utility
             }
             else // only compare against the first value here
             {
-                if (values.Length > 1)
+                if (values.Length > 1 && equality != ConfigNodes.CheckNodes.CompareType.Between)
                 {
                     Logger.Log($"Size comparisons against multiple values when not using Equals only use the first value. Value list is: {string.Join(", ", values)}", Logger.LogLevel.Warn);
                 }
