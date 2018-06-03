@@ -47,3 +47,19 @@
 
 3.2.2.2
 	Update to fix bad ckan entry
+
+3.2.2.3
+	Thanks to github user @thor1872 for this:
+	Add CFG for:
+
+		Aviation Lights
+		B9_Aerospace_ProceduralWings
+		CCTV
+		Firespitter
+		HullCameraVDS
+		MandatoryRCSPartPack
+		ProceduralPart
+		SCANsat
+		UniversalStorage
+
+		Add new icons for some mod and convert old .png to dds
