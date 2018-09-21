@@ -63,3 +63,9 @@
 		UniversalStorage
 
 		Add new icons for some mod and convert old .png to dds
+
+	3.2.2.4
+		Incorporated additions from:
+			Forum user @therealcrow999
+			Forum user @Gordon Dry
+		Disabled patch which was restoring old parts which had been depreciated.
