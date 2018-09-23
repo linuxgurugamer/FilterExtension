@@ -73,3 +73,6 @@
 3.2.2.5
 	Updated SubCategories_Fuel.cfg per @banditsan's changes
 	Added to SpaceDock
+
+3.2.2.6
+	More updates and cleanup by forum users @Gordon Dry and @banditsan
