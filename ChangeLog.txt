@@ -76,3 +76,6 @@
 
 3.2.2.6
 	More updates and cleanup by forum users @Gordon Dry and @banditsan
+
+3.2.2.7
+	Added missing directory for install

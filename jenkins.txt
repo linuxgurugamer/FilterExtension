@@ -36,6 +36,7 @@
 
 # 7: AdditionalFolders in the GameData, 1 per line
 7:000_FilterExtensions_Configs
+7:zFinal_FilterExtensions
 #7:000_FilterExtensions_AltConfig_1
 #
 # End of file
