@@ -1,5 +1,5 @@
 
-rem @echo off
+@echo off
 
 set H=R:\KSP_1.4.3_dev
 set GAMEDIR=000_FilterExtensions

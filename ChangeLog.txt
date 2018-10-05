@@ -79,3 +79,8 @@
 
 3.2.2.7
 	Added missing directory for install
+
+3.2.2.8
+	Thanks to @Gordon Dry for these changes
+		Fixed the RT patch to make it lighter (all disabled stuff is commented out, so the file is bigger :D )
+		Added Tantares, TantaresLV (plus icon)
