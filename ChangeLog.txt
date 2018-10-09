@@ -84,3 +84,7 @@
 	Thanks to @Gordon Dry for these changes
 		Fixed the RT patch to make it lighter (all disabled stuff is commented out, so the file is bigger :D )
 		Added Tantares, TantaresLV (plus icon)
+
+3.2.2.9
+	Added NearFutureAeronautics
+	Cleaned up some of the previous updates 
