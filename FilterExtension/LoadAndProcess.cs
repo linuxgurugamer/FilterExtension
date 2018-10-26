@@ -14,24 +14,24 @@ namespace FilterExtensions
     public class LoadAndProcess : MonoBehaviour
     {
         // storing categories loaded at Main Menu for creation when entering SPH/VAB
-        public List<CategoryNode> CategoryNodes = new List<CategoryNode>();
+        public List<CategoryNode> CategoryNodes; // = new List<CategoryNode>();
 
         public CategoryNode FilterByManufacturer;
 
         // all subcategories with duplicated filters
-        public Dictionary<string, List<string>> conflictsDict = new Dictionary<string, List<string>>();
+        public Dictionary<string, List<string>> conflictsDict; // = new Dictionary<string, List<string>>();
 
         // renaming categories
-        public Dictionary<string, string> Rename = new Dictionary<string, string>();
+        public Dictionary<string, string> Rename; // = new Dictionary<string, string>();
 
         // removing categories
-        public HashSet<string> removeSubCategory = new HashSet<string>();
+        public HashSet<string> removeSubCategory; // = new HashSet<string>();
 
         // entry for each unique combination of propellants
-        public List<List<string>> propellantCombos = new List<List<string>>();
+        public List<List<string>> propellantCombos; // = new List<List<string>>();
 
         // entry for each unique resource
-        public List<string> resources = new List<string>();
+        public List<string> resources; // = new List<string>();
 
         // url for each part by internal name
         public static Dictionary<string, string> partPathDict = new Dictionary<string, string>(); // set null after processing completed
@@ -68,7 +68,15 @@ namespace FilterExtensions
         // static list of compiled categories to instantiate in the editor
         public static List<CategoryInstance> Categories = new List<CategoryInstance>();
 
-
+        void Awake()
+        {
+            CategoryNodes = new List<CategoryNode>();
+            conflictsDict = new Dictionary<string, List<string>>();
+            Rename = new Dictionary<string, string>();
+            removeSubCategory = new HashSet<string>();
+            propellantCombos = new List<List<string>>();
+            resources = new List<string>();
+        }
         private IEnumerator Start()
         {
             Logger.Log(string.Empty, Logger.LogLevel.Warn); // print version
@@ -76,6 +84,8 @@ namespace FilterExtensions
             yield return null;
 
             GetConfigs();
+            while (PartLoader.LoadedPartsList == null)
+                yield return new WaitForSeconds(0.1f);
             GetPartData();
             ProcessFilterDefinitions();
             IconLib.Load();
@@ -141,6 +151,9 @@ namespace FilterExtensions
                 {
                     RepairAvailablePartUrl(p);
                 }
+                if (p.name.Length >= 6 && p.name.Substring(0, 6) == "kerbal")
+                    continue;
+               
                 // if the url is still borked, can't associate a mod to the part
                 if (!string.IsNullOrEmpty(p.partUrl))
                 {
@@ -164,7 +177,10 @@ namespace FilterExtensions
                 {
                     foreach (PartResource r in p.partPrefab.Resources)
                     {
-                        resources.AddUnique(r.resourceName);
+                        if (r.resourceName != null)
+                        {
+                            resources.AddUnique(r.resourceName);
+                        }                    
                     }
                 }
             }

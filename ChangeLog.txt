@@ -92,3 +92,7 @@
 3.2.2.10
 	Bumped version for 1.5 build
 	Added crewed pods
+
+3.2.2.11
+	Added a probably unnecessary extra check in LoadAndProcess to wait  until PartLoader.LoadedPartsList is not null
+	Fixed nullref in startup when a kerbal part was accessed
