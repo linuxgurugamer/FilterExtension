@@ -97,7 +97,8 @@
 	Added a probably unnecessary extra check in LoadAndProcess to wait  until PartLoader.LoadedPartsList is not null
 	Fixed nullref in startup when a kerbal part was accessed
 
-3.2.2.x
+3.2.2.12
 	When checking for Unresearchable, added the word "Unresearcheable" since it's been used both by Squad and others
 	Fixed issue which was causing various subcategories from not being shown.  Issue was happening in games without
 		MakingHistory, and was caused by the kerbalEVAVintage part not being initialized
+	More additions to configs from @Gordon Dry and @Divstator
