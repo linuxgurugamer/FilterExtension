@@ -140,7 +140,8 @@ namespace FilterExtensions
                 {
                     continue;
                 }
-                else if (string.Equals(p.TechRequired, "Unresearchable", StringComparison.OrdinalIgnoreCase))
+                else if (string.Equals(p.TechRequired, "Unresearchable", StringComparison.OrdinalIgnoreCase) ||
+                    string.Equals(p.TechRequired, "Unresearcheable", StringComparison.OrdinalIgnoreCase))
                 {
                     Logger.Log($"part {p.name} is noted as unreasearchable and will not be visible", Logger.LogLevel.Debug);
                     Editor.blackListedParts.Add(p.name);

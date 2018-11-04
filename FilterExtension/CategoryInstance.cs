@@ -5,6 +5,7 @@ using KSP.UI.Screens;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using System.Text;
 
 namespace FilterExtensions
@@ -33,11 +34,13 @@ namespace FilterExtensions
             Type = protoC.Type;
             Behaviour = protoC.Behaviour;
             Subcategories = new List<SubCategoryInstance>();
+
             foreach (SubCategoryItem sci in protoC.SubCategories)
             {
                 if (allSubCats.TryGetValue(sci.SubcategoryName, out SubcategoryNode protoSC) && protoSC != null)
                 {
                     var node = new SubcategoryNode(protoSC, sci.ApplyTemplate ? protoC : null);
+
                     var instance = new SubCategoryInstance(node, PartLoader.LoadedPartsList);
                     if (instance.Valid)
                     {
@@ -45,10 +48,12 @@ namespace FilterExtensions
                     }
                 }
             }
+
             if (!Subcategories.Any())
             {
                 throw new ArgumentException($"No subcategories valid, abandon instantiation of {Name}");
             }
+
         }
 
         public void Initialise()

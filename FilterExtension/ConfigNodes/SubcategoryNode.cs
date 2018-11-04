@@ -53,6 +53,7 @@ namespace FilterExtensions.ConfigNodes
         public SubcategoryNode(SubcategoryNode cloneFrom, CategoryNode category)
         {
             Debug.Assert(cloneFrom != null, "subcategory cloned from null");
+
             SubCategoryTitle = cloneFrom.SubCategoryTitle;
             IconName = cloneFrom.IconName;
             Filters = cloneFrom.Filters;
@@ -106,6 +107,8 @@ namespace FilterExtensions.ConfigNodes
         /// <returns></returns>
         public bool CheckPartFilters(AvailablePart part, int depth = 0)
         {
+            if (part.name.Contains("kerbalEVA"))
+                return false;
             if (Editor.blackListedParts != null)
             {
                 if (part.category == PartCategories.none && Editor.blackListedParts.Contains(part.name))
@@ -147,13 +150,14 @@ namespace FilterExtensions.ConfigNodes
             {
                 return false;
             }
-            foreach (FilterNode f in Filters)
-            {
-                if (f.FilterResult(ap, depth))
-                {
-                    return true;
+
+                foreach (FilterNode f in Filters)
+                { 
+                    if (f.FilterResult(ap, depth))
+                    {
+                        return true;
+                    }
                 }
-            }
             return false;
         }
 
