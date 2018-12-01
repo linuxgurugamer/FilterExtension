@@ -101,4 +101,13 @@
 	When checking for Unresearchable, added the word "Unresearcheable" since it's been used both by Squad and others
 	Fixed issue which was causing various subcategories from not being shown.  Issue was happening in games without
 		MakingHistory, and was caused by the kerbalEVAVintage part not being initialized
-	More additions to configs from @Gordon Dry and @Divstator
+	More additions to configs from @Gordon Dry and @
+
+3.2.2.13
+	These minor tweaks from forum user @Gordon Dry
+		2 small RemoteTech fixes
+		add KopernicusSolarPanel to subcategory Solar Panels
+		Merge remote-tracking branch 'upstream/master' into add-KopernicusSolarPanel-to-subcategory-Solar-Panels
+		add Coatl Aerospace
+		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
+		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
