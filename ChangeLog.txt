@@ -111,3 +111,8 @@
 		add Coatl Aerospace
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
+
+3.2.2.14
+	Updated the RemoteTEch patch
+	Upated the Coatl patch
+	Removed max version from the .version file
