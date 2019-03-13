@@ -116,3 +116,7 @@
 	Updated the RemoteTEch patch
 	Upated the Coatl patch
 	Removed max version from the .version file
+
+3.2.2.16
+	Thanks to github user @PadronSF for this:
+		Add a "Utility" subcategory to allow the life support tanks to be displayed when selecting the Procedural Parts mod icon.
