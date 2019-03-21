@@ -120,3 +120,7 @@
 3.2.2.16
 	Thanks to github user @PadronSF for this:
 		Add a "Utility" subcategory to allow the life support tanks to be displayed when selecting the Procedural Parts mod icon.
+
+3.2.2.17
+	Thanks to github user @BanditSan for this:
+		Pointed to correct folder for lastest RLA Reborn
