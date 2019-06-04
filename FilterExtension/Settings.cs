@@ -36,7 +36,7 @@ namespace FilterExtensions
         {
             get
             {
-                return "Filter Extensions";
+                return "Editor Settings";
             }
         }
 
@@ -44,7 +44,7 @@ namespace FilterExtensions
         {
             get
             {
-                return "Editor Settings";
+                return "Filter Extensions";
             }
         }
 

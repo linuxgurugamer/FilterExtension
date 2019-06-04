@@ -124,3 +124,8 @@
 3.2.2.17
 	Thanks to github user @BanditSan for this:
 		Pointed to correct folder for lastest RLA Reborn
+
+3.2.3
+	Fixed for new categories in KSP 1.7.1
+		Note:  The Filter by Function has been changed from a replace to an append with all the identical lines with stock commented out
+		Note 2: This version is only compatable with 1.7.1 and future.

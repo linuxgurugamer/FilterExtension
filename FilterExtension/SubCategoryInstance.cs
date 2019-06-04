@@ -42,8 +42,12 @@ namespace FilterExtensions
         /// called in the editor when creating the subcategory
         /// </summary>
         /// <param name="cat">The category to add this subcategory to</param>
-        public void Initialise(PartCategorizer.Category cat)
+        public void Initialise(PartCategorizer.Category cat, bool debug )
         {
+#if DEBUG
+            if (debug)
+                UnityEngine.Debug.Log("Initialize, cat: " + cat);
+#endif
             if (cat == null)
             {
                 return;

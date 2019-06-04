@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+using UnityEngine;
 namespace FilterExtensions.ConfigNodes
 {
     using System.Diagnostics;
