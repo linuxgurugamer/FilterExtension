@@ -129,3 +129,6 @@
 	Fixed for new categories in KSP 1.7.1
 		Note:  The Filter by Function has been changed from a replace to an append with all the identical lines with stock commented out
 		Note 2: This version is only compatable with 1.7.1 and future.
+
+3.2.3.1
+	Version bump because of a bad build
