@@ -29,7 +29,7 @@
 #4:Textures,GameData/ManeuverQueue/Textures
 
 # 5:ModuleManager
-5:ModuleManager
+#5:ModuleManager
 
 # 6:mod_id
 #6:
