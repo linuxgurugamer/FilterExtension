@@ -63,11 +63,17 @@ namespace FilterExtensions
         /// <returns></returns>
         bool TestPart(AvailablePart ap)
         {
+#if DEBUG
+            UnityEngine.Debug.Log("TestPart, name: " + ap.name + ", title: " + ap.title);
+#endif
             if (!UnpurchasedVisible && HighLogic.CurrentGame.Parameters.CustomParams<Settings>().hideUnpurchased 
                 && !(ResearchAndDevelopment.PartModelPurchased(ap) || ResearchAndDevelopment.IsExperimentalPart(ap)))
             {
                 return false;
             }
+#if DEBUG
+            UnityEngine.Debug.Log("Parts.Contains: " + Parts.Contains(ap));
+#endif
             return Parts.Contains(ap);
         }
     }
