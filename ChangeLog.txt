@@ -142,4 +142,5 @@
 		WheelsCollection
 	Updated for 1.7.2
 	Updated AssemblyVersion.tt
+	Removed ModuleManager from release
 
