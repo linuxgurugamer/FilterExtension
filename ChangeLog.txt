@@ -121,14 +121,26 @@
 	Thanks to github user @PadronSF for this:
 		Add a "Utility" subcategory to allow the life support tanks to be displayed when selecting the Procedural Parts mod icon.
 
-3.2.2.17
+3.2.2.1
 	Thanks to github user @BanditSan for this:
 		Pointed to correct folder for lastest RLA Reborn
 
 3.2.3
 	Fixed for new categories in KSP 1.7.1
 		Note:  The Filter by Function has been changed from a replace to an append with all the identical lines with stock commented out
-		Note 2: This version is only compatable with 1.7.1 and future.
+		Note 2: This version is only compatable with 1.7.1 and future.6
 
 3.2.3.1
 	Version bump because of a bad build
+
+3.2.3.2
+	Thanks to @Galenmacil for pointing out that some icons were missing due to mods being renamed:
+		Added missing icons for QuizTech Continued and Universal Storage 2
+	Thanks to @Galenmacil for contributing the following icons:
+		Mk3Expansion
+		VanguardTechnologies
+		WheelsCollection
+	Updated for 1.7.2
+	Updated AssemblyVersion.tt
+	Removed ModuleManager from release
+
