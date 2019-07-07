@@ -42,8 +42,12 @@ namespace FilterExtensions
         /// called in the editor when creating the subcategory
         /// </summary>
         /// <param name="cat">The category to add this subcategory to</param>
-        public void Initialise(PartCategorizer.Category cat)
+        public void Initialise(PartCategorizer.Category cat, bool debug )
         {
+#if DEBUG
+            if (debug)
+                UnityEngine.Debug.Log("Initialize, cat: " + cat);
+#endif
             if (cat == null)
             {
                 return;
@@ -59,11 +63,17 @@ namespace FilterExtensions
         /// <returns></returns>
         bool TestPart(AvailablePart ap)
         {
+#if DEBUG
+            UnityEngine.Debug.Log("TestPart, name: " + ap.name + ", title: " + ap.title);
+#endif
             if (!UnpurchasedVisible && HighLogic.CurrentGame.Parameters.CustomParams<Settings>().hideUnpurchased 
                 && !(ResearchAndDevelopment.PartModelPurchased(ap) || ResearchAndDevelopment.IsExperimentalPart(ap)))
             {
                 return false;
             }
+#if DEBUG
+            UnityEngine.Debug.Log("Parts.Contains: " + Parts.Contains(ap));
+#endif
             return Parts.Contains(ap);
         }
     }

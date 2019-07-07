@@ -29,7 +29,7 @@
 #4:Textures,GameData/ManeuverQueue/Textures
 
 # 5:ModuleManager
-5:ModuleManager
+#5:ModuleManager
 
 # 6:mod_id
 #6:
@@ -38,6 +38,11 @@
 7:000_FilterExtensions_Configs
 7:zFinal_FilterExtensions
 #7:000_FilterExtensions_AltConfig_1
+
+NOT:1.4.5
+NOT:1.5.1
+NOT:1.6.1
+
 #
 # End of file
 #
