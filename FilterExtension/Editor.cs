@@ -31,17 +31,23 @@ namespace FilterExtensions
 
         public IEnumerator EditorInit()
         {
+#if true
             Settings settings = HighLogic.CurrentGame.Parameters.CustomParams<Settings>();
             Logger.Log("Starting on general categories", Logger.LogLevel.Debug);
             foreach (CategoryInstance c in LoadAndProcess.Categories) // all non mod specific FE categories
             {
-                if ((c.Type == CategoryNode.CategoryType.NEW || c.Type == CategoryNode.CategoryType.STOCK)
-                    && (settings.replaceFbM || !string.Equals(c.Name, "Filter by Manufacturer", StringComparison.OrdinalIgnoreCase)))
+                Logger.Dev("EditorInit, c.Name: " + c.Name + ", c.type: " + c.Type);
+               // if (c.Name != "Filter by Function")
                 {
-                    c.Initialise();
+                    if ((c.Type == CategoryNode.CategoryType.NEW || c.Type == CategoryNode.CategoryType.STOCK)
+                        && (settings.replaceFbM || !string.Equals(c.Name, "Filter by Manufacturer", StringComparison.OrdinalIgnoreCase)))
+                    {
+                        Logger.Dev("EditorInit, c.Initialize");
+                        c.Initialise(c.Name == "Filter by Function");
+                    }
                 }
             }
-
+#endif
             yield return null;
             Logger.Log("Starting on late categories", Logger.LogLevel.Debug);
             // this is to be used for altering subcategories in a category added by another mod
@@ -49,10 +55,10 @@ namespace FilterExtensions
             {
                 if (c.Type == CategoryNode.CategoryType.MOD)
                 {
-                    c.Initialise();
+                    c.Initialise(c.Name == "Filter by Function");
                 }
             }
-
+      
             yield return null;
             Logger.Log("Starting on removing categories", Logger.LogLevel.Debug);
             // Remove any category with no subCategories (causes major breakages if selected).

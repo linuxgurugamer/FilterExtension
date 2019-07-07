@@ -56,15 +56,19 @@ namespace FilterExtensions
 
         }
 
-        public void Initialise()
-        {            
+        public void Initialise(bool debug )
+        {
+#if DEBUG
+            if (debug)
+                Debug.Log("Initialize, Type: " + Type + ", Behaviour: " + Behaviour);
+#endif
             if (Type == CategoryNode.CategoryType.NEW)
             {
                 RUI.Icons.Selectable.Icon icon = IconLib.GetIcon(this);
                 PartCategorizer.Category category = PartCategorizer.AddCustomFilter(Name, Localizer.Format(Name), icon, Colour);
                 category.displayType = EditorPartList.State.PartsList;
                 category.exclusionFilter = PartCategorizer.Instance.filterGenericNothing;
-                InstanceSubcategories(category);
+                InstanceSubcategories(category, debug);
             }
             else
             {
@@ -87,17 +91,25 @@ namespace FilterExtensions
                     }
                     category.subcategories.Clear();
                 }
-                InstanceSubcategories(category);
+                InstanceSubcategories(category, debug);
             }
         }
 
-        void InstanceSubcategories(PartCategorizer.Category category)
+        void InstanceSubcategories(PartCategorizer.Category category, bool debug )
         {
+#if DEBUG
+            if (debug)
+                Debug.Log("InstanceSubcategories, category: " + category);
+#endif
             foreach (SubCategoryInstance sc in Subcategories)
             {
                 try
                 {
-                    sc.Initialise(category);
+#if DEBUG
+                    if (debug)
+                        Debug.Log("SubCategoryInstance " + sc.Name);
+#endif
+                    sc.Initialise(category, debug);
                 }
                 catch (Exception ex)
                 {
