@@ -144,3 +144,10 @@
 	Updated AssemblyVersion.tt
 	Removed ModuleManager from release
 
+3.2.3.3
+	Thanks to @Gordon-Dry for these changes:
+		Add Simple Procedural Engines (SPEngine)
+		Add ModuleConfigurableAntenna
+		Adding ROCapsules, ROEngines and ROTanks
+		Add RN Industries
+
