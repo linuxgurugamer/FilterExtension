@@ -1,7 +1,7 @@
 
 @echo off
 
-set H=R:\KSP_1.7.3_dev
+set H=%KSPDIR%
 set GAMEDIR=000_FilterExtensions
 set GAMEDIR2="000_FilterExtensions_Configs"
 set GAMEDIR3="zFinal_FilterExtensions"

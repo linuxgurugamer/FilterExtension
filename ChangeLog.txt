@@ -150,3 +150,6 @@
 		Adding ROCapsules, ROEngines and ROTanks
 		Add RN Industries
 
+3.2.4
+	Added InstallChecker
+	Updated for KSP 1.8
