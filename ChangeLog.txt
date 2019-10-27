@@ -107,7 +107,6 @@
 	These minor tweaks from forum user @Gordon Dry
 		2 small RemoteTech fixes
 		add KopernicusSolarPanel to subcategory Solar Panels
-		Merge remote-tracking branch 'upstream/master' into add-KopernicusSolarPanel-to-subcategory-Solar-Panels
 		add Coatl Aerospace
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
