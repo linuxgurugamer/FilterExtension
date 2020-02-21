@@ -107,7 +107,6 @@
 	These minor tweaks from forum user @Gordon Dry
 		2 small RemoteTech fixes
 		add KopernicusSolarPanel to subcategory Solar Panels
-		Merge remote-tracking branch 'upstream/master' into add-KopernicusSolarPanel-to-subcategory-Solar-Panels
 		add Coatl Aerospace
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
 		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
@@ -144,3 +143,13 @@
 	Updated AssemblyVersion.tt
 	Removed ModuleManager from release
 
+3.2.3.3
+	Thanks to @Gordon-Dry for these changes:
+		Add Simple Procedural Engines (SPEngine)
+		Add ModuleConfigurableAntenna
+		Adding ROCapsules, ROEngines and ROTanks
+		Add RN Industries
+
+3.2.4
+	Added InstallChecker
+	Updated for KSP 1.8
