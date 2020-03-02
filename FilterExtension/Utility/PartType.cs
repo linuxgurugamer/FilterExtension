@@ -49,7 +49,11 @@ namespace FilterExtensions.Utility
                     case "purchased":
                         testVal = ResearchAndDevelopment.PartModelPurchased(part);
                         break;
-                }
+ 
+                    case "hidden":
+                        testVal = IsHidden(part);
+                        break;
+               }
                 if (testVal)
                 {
                     return true;
@@ -952,6 +956,14 @@ namespace FilterExtensions.Utility
                 return false;
             }
             return part.partPrefab.attachNodes[0].size != part.partPrefab.attachNodes[1].size;
+        }
+        
+        /// <summary>
+        /// checks if the part is supposed to be hidden (i.e. deprecated)
+        /// </summary>
+        public static bool IsHidden(AvailablePart part)
+        {
+            return part.TechHidden;
         }
 
         public static bool Contains(string[] CheckParams, IEnumerable<string> partParams, bool contains = true, bool exact = false)
