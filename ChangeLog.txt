@@ -161,3 +161,7 @@ Changelog
 		Update SubCategories_Electrical.cfg (KSP-IE quick fix)
 		Tantares fix
 		Update SubCategories_Electrical.cfg
+
+3.2.4.2
+	Thanks to forum user @leatherneck6017 for this:
+		Add custom check for parts that have TechHidden = True
