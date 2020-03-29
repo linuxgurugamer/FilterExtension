@@ -129,7 +129,7 @@ namespace FilterExtensions.Utility
                     return value.Contains("Cargo", StringComparer.OrdinalIgnoreCase);
 
                 case PartCategories.Robotics:
-                    return value.Contains("Robotics ", StringComparer.OrdinalIgnoreCase);
+                    return value.Contains("Robotics", StringComparer.OrdinalIgnoreCase);
 
                 default:
                     return false;
