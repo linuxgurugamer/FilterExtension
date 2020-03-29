@@ -1,0 +1,48 @@
+#
+# This file contains several types of information:
+#
+# 1     Mod install directory, version file to use when building zip file
+# 2     Project definitions
+# 3     Files to copy, source, dest
+# 4     Directory to copy, sourcedir, destdir
+# 5     Add ModuleManager to GameData
+# 6     Spacedock.info mod id
+# 7		Additional folders in the GameData to be included in the final zip
+
+#
+# All paths are relative to the top git folder of the repo
+#
+# and must use forward slashes
+#
+ 
+# 1:GAMEDIR, VERSIONFILE
+1:000_FilterExtensions, FilterExtension.version, FilterExtension
+
+# 2:PROJNAME, PROJFILE, VERSIONFILE, PLUGINSFOLDER
+2:FilterExtensions,FilterExtension/FilterExtensions.csproj,FilterExtension.version,GameData/000_FilterExtensions/Plugins
+
+# 3:SOURCEFILE, DESTDIR
+3:FilterExtension.version,GameData/000_FilterExtensions
+3:License.txt,GameData/000_FilterExtensions
+
+# 4:SOURCDIR, DESTDIR
+#4:Textures,GameData/ManeuverQueue/Textures
+
+# 5:ModuleManager
+#5:ModuleManager
+
+# 6:mod_id
+#6:
+
+# 7: AdditionalFolders in the GameData, 1 per line
+7:000_FilterExtensions_Configs
+7:zFinal_FilterExtensions
+#7:000_FilterExtensions_AltConfig_1
+
+NOT:1.4.5
+NOT:1.5.1
+NOT:1.6.1
+
+#
+# End of file
+#
