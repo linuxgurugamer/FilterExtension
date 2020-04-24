@@ -165,3 +165,14 @@ Changelog
 3.2.4.2
 	Thanks to forum user @leatherneck6017 for this:
 		Add custom check for parts that have TechHidden = True
+
+3.2.5
+	Thanks to user @leatherneck6017 for these:
+		Aero: Filter out ModuleCommand from Wings subcategory
+		Fuel: Add SSTUVolumeConatiner to checks
+		ISRU: Add Radiators subcategory
+		Lights: Filter out landing gear with ModuleWheelBase
+		Solar Panels: Add SSTU solar panels to check. Filter out parts with ModuleCommand and ModuleDockingNode
+		Fix typo in robotics
+		Move antennae out of science and into their own
+
