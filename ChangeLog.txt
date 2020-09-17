@@ -1,3 +1,4 @@
+Changelog
 
 3.2.0
 	Simple recompile for 1.3.1, NO LOCALIZATION, beta
@@ -153,3 +154,14 @@
 3.2.4
 	Added InstallChecker
 	Updated for KSP 1.8
+
+3.2.4.1
+	Thanks to forum user @Gordon-Dry for these:
+		Bluedog_DB fix
+		Update SubCategories_Electrical.cfg (KSP-IE quick fix)
+		Tantares fix
+		Update SubCategories_Electrical.cfg
+
+3.2.4.2
+	Thanks to forum user @leatherneck6017 for this:
+		Add custom check for parts that have TechHidden = True
