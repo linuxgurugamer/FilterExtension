@@ -199,3 +199,4 @@ PartDatabase.cfg
 Physics.cfg
 *.dll
 .vs
+.history
