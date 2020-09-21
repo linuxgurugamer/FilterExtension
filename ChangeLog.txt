@@ -176,3 +176,18 @@ Changelog
 		Fix typo in robotics
 		Move antennae out of science and into their own
 
+3.2.6 
+	Thanks to @Gordon-Dry for these
+		Add Hephaistos
+		Add Luciole
+		Add Dodo Labs
+		Procedural Avionics appears in Procedural Parts category
+		"SRBs" also lists parts with HTPB, PBAN and PSPC
+		"Rockets" also lists parts with Kerosene/LqdOxygen and HTP/Kerosene/LqdOxygen
+		Added subcategory "Sounding Rockets" for the fuel combo Aniline/Furfuryl/IRFNA-III
+		Added subcategory "Early Rockets" for the fuel combos Ethanol75/LqdOxygen | Ethanol75/HTP/LqdOxygen | Ethanol90/HTP/LqdOxygen | Hydyne/HTP/LqdOxygen | AK20/Kerosene
+		Added subcategory "Upper Stage Engines" for the fuel combos IWFNA/UDMH | HTP/Kerosene
+		Added subcategory "GPS" to science in favor of KerbalGPS
+		Repaired appearance in Science category
+	Thanks to github user !7ranceaddic7 for this
+		Wiki Docs Initial Commit
