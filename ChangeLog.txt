@@ -191,3 +191,7 @@ Changelog
 		Repaired appearance in Science category
 	Thanks to github user !7ranceaddic7 for this
 		Wiki Docs Initial Commit
+
+3.2.6.1
+	Added AssemblyFileVersion
+	Updated version file for 1.12
