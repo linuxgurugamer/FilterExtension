@@ -195,3 +195,24 @@ Changelog
 3.2.6.1
 	Added AssemblyFileVersion
 	Updated version file for 1.12
+
+3.2.7
+	Thanks to github user @MatanShahar for this:
+		Add support for Configurable Containers (ModuleTankManager)
+	Thanks to @Gordon-Dry for these:
+		fix Mod_NearFutureTechnologies.cfg
+		KopernicusSolarPanels vs. KopernicusSolarPanel
+		Overlooked internal antennas in 08_Science.cfg
+		Fix REFUSE compatibility
+		Add CRE
+		Kerbalism / parts with sample slots
+		Add RTG to SubCategories_Electrical
+		zzz_AntennaClassDescriptions fix
+		Mod_UniversalStorage
+		Mod_NearFutureTechnologies
+		Add "Eisenhower Astronautics - Stockalike Angara" to Tantares
+		SubCategories_Science
+		SubCategories_Antannae
+
+
+
