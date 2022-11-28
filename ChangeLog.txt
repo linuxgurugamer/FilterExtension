@@ -214,5 +214,6 @@ Changelog
 		SubCategories_Science
 		SubCategories_Antannae
 
-
-
+	3.2.7.1
+		Thanks to @Gordon-Dry for this:
+			Delete zzz_AddClassDescriptionsToAntennas.cfg (duplicate file)
