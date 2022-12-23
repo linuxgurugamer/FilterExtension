@@ -217,3 +217,8 @@ Changelog
 	3.2.7.1
 		Thanks to @Gordon-Dry for this:
 			Delete zzz_AddClassDescriptionsToAntennas.cfg (duplicate file)
+
+	3.2.8
+		Thanks to github user @Grimmas:
+			Added separate categore for FFT
+			Added SpaceDust to NFT category
