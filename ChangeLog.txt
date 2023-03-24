@@ -1,224 +1,228 @@
 Changelog
 
 3.2.0
-	Simple recompile for 1.3.1, NO LOCALIZATION, beta
+Simple recompile for 1.3.1, NO LOCALIZATION, beta
 
 3.2.0.1
-	Release
+Release
 
 3.2.0.2
-	Updated subcategories:
-		Subcategories_Science		
-		SubCategories_Landing
-	Updated categories:
-		Mod_NearFutureTechnologies
-		Mod_B9
+Updated subcategories:
+	Subcategories_Science		
+	SubCategories_Landing
+Updated categories:
+	Mod_NearFutureTechnologies
+	Mod_B9
 
-	New category:
-		00_Fuel
-	New subcategory:
-		Subcategories_Fuel
+New category:
+	00_Fuel
+New subcategory:
+	Subcategories_Fuel
 
 3.2.0.3
-	Added subcategory for ModuleEnginesAJEJet
-	Updated NamesAndIcons and 02_Engines to support the new AJE Jets
-	Added new check to support checking the engine type
-	Added ability to filter on partial part name
-	Added configs for AJE jets and propellers
-	Added configs for Airplane+ propellers
-	Added new categories for engines:
-		Prop engines
-		Electric prop engines
-	Added some additional filters for the various Firespitter engines
+Added subcategory for ModuleEnginesAJEJet
+Updated NamesAndIcons and 02_Engines to support the new AJE Jets
+Added new check to support checking the engine type
+Added ability to filter on partial part name
+Added configs for AJE jets and propellers
+Added configs for Airplane+ propellers
+Added new categories for engines:
+	Prop engines
+	Electric prop engines
+Added some additional filters for the various Firespitter engines
 
 3.2.1
-	updated for 1.4.1
+updated for 1.4.1
 
 3.2.2
-	Updated version file
-	Thanks to @cameronleger
-		New CheckNodes for Thrust, ISP Atmo & Vac
-	Thanks to @sswelm
-		Replaced filtering on obsolete KSPI partmofules by current KSPIE partmodules
-	Thanks to @kerbas_ad_astra
-		No point keeping size1p5 and size5 icons, since there's stock versions now
+Updated version file
+Thanks to @cameronleger
+	New CheckNodes for Thrust, ISP Atmo & Vac
+Thanks to @sswelm
+	Replaced filtering on obsolete KSPI partmofules by current KSPIE partmodules
+Thanks to @kerbas_ad_astra
+	No point keeping size1p5 and size5 icons, since there's stock versions now
 
 3.2.2.1
-	Added patch to fix categories on many of the stock parts
+Added patch to fix categories on many of the stock parts
 
 3.2.2.2
-	Update to fix bad ckan entry
+Update to fix bad ckan entry
 
 3.2.2.3
-	Thanks to github user @thor1872 for this:
-	Add CFG for:
+Thanks to github user @thor1872 for this:
+Add CFG for:
 
-		Aviation Lights
-		B9_Aerospace_ProceduralWings
-		CCTV
-		Firespitter
-		HullCameraVDS
-		MandatoryRCSPartPack
-		ProceduralPart
-		SCANsat
-		UniversalStorage
+	Aviation Lights
+	B9_Aerospace_ProceduralWings
+	CCTV
+	Firespitter
+	HullCameraVDS
+	MandatoryRCSPartPack
+	ProceduralPart
+	SCANsat
+	UniversalStorage
 
-		Add new icons for some mod and convert old .png to dds
+	Add new icons for some mod and convert old .png to dds
 
 3.2.2.4
-		Incorporated additions from:
-			Forum user @therealcrow999
-			Forum user @Gordon Dry
-		Disabled patch which was restoring old parts which had been depreciated.
+	Incorporated additions from:
+		Forum user @therealcrow999
+		Forum user @Gordon Dry
+	Disabled patch which was restoring old parts which had been depreciated.
 
 3.2.2.5
-	Updated SubCategories_Fuel.cfg per @banditsan's changes
-	Added to SpaceDock
+Updated SubCategories_Fuel.cfg per @banditsan's changes
+Added to SpaceDock
 
 3.2.2.6
-	More updates and cleanup by forum users @Gordon Dry and @banditsan
+More updates and cleanup by forum users @Gordon Dry and @banditsan
 
 3.2.2.7
-	Added missing directory for install
+Added missing directory for install
 
 3.2.2.8
-	Thanks to @Gordon Dry for these changes
-		Fixed the RT patch to make it lighter (all disabled stuff is commented out, so the file is bigger :D )
-		Added Tantares, TantaresLV (plus icon)
+Thanks to @Gordon Dry for these changes
+	Fixed the RT patch to make it lighter (all disabled stuff is commented out, so the file is bigger :D )
+	Added Tantares, TantaresLV (plus icon)
 
 3.2.2.9
-	Added NearFutureAeronautics
-	Cleaned up some of the previous updates 
+Added NearFutureAeronautics
+Cleaned up some of the previous updates 
 
 3.2.2.10
-	Bumped version for 1.5 build
-	Added crewed pods
+Bumped version for 1.5 build
+Added crewed pods
 
 3.2.2.11
-	Added a probably unnecessary extra check in LoadAndProcess to wait  until PartLoader.LoadedPartsList is not null
-	Fixed nullref in startup when a kerbal part was accessed
+Added a probably unnecessary extra check in LoadAndProcess to wait  until PartLoader.LoadedPartsList is not null
+Fixed nullref in startup when a kerbal part was accessed
 
 3.2.2.12
-	When checking for Unresearchable, added the word "Unresearcheable" since it's been used both by Squad and others
-	Fixed issue which was causing various subcategories from not being shown.  Issue was happening in games without
-		MakingHistory, and was caused by the kerbalEVAVintage part not being initialized
-	More additions to configs from @Gordon Dry and @
+When checking for Unresearchable, added the word "Unresearcheable" since it's been used both by Squad and others
+Fixed issue which was causing various subcategories from not being shown.  Issue was happening in games without
+	MakingHistory, and was caused by the kerbalEVAVintage part not being initialized
+More additions to configs from @Gordon Dry and @
 
 3.2.2.13
-	These minor tweaks from forum user @Gordon Dry
-		2 small RemoteTech fixes
-		add KopernicusSolarPanel to subcategory Solar Panels
-		add Coatl Aerospace
-		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
-		add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
+These minor tweaks from forum user @Gordon Dry
+	2 small RemoteTech fixes
+	add KopernicusSolarPanel to subcategory Solar Panels
+	add Coatl Aerospace
+	add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg
+	add values to 000_FilterExtensions_Configs\SubCategories_ISRU.cfg for Kerbalism
 
 3.2.2.14
-	Updated the RemoteTEch patch
-	Upated the Coatl patch
-	Removed max version from the .version file
+Updated the RemoteTEch patch
+Upated the Coatl patch
+Removed max version from the .version file
 
 3.2.2.16
-	Thanks to github user @PadronSF for this:
-		Add a "Utility" subcategory to allow the life support tanks to be displayed when selecting the Procedural Parts mod icon.
+Thanks to github user @PadronSF for this:
+	Add a "Utility" subcategory to allow the life support tanks to be displayed when selecting the Procedural Parts mod icon.
 
 3.2.2.1
-	Thanks to github user @BanditSan for this:
-		Pointed to correct folder for lastest RLA Reborn
+Thanks to github user @BanditSan for this:
+	Pointed to correct folder for lastest RLA Reborn
 
 3.2.3
-	Fixed for new categories in KSP 1.7.1
-		Note:  The Filter by Function has been changed from a replace to an append with all the identical lines with stock commented out
-		Note 2: This version is only compatable with 1.7.1 and future.6
+Fixed for new categories in KSP 1.7.1
+	Note:  The Filter by Function has been changed from a replace to an append with all the identical lines with stock commented out
+	Note 2: This version is only compatable with 1.7.1 and future.6
 
 3.2.3.1
-	Version bump because of a bad build
+Version bump because of a bad build
 
 3.2.3.2
-	Thanks to @Galenmacil for pointing out that some icons were missing due to mods being renamed:
-		Added missing icons for QuizTech Continued and Universal Storage 2
-	Thanks to @Galenmacil for contributing the following icons:
-		Mk3Expansion
-		VanguardTechnologies
-		WheelsCollection
-	Updated for 1.7.2
-	Updated AssemblyVersion.tt
-	Removed ModuleManager from release
+Thanks to @Galenmacil for pointing out that some icons were missing due to mods being renamed:
+	Added missing icons for QuizTech Continued and Universal Storage 2
+Thanks to @Galenmacil for contributing the following icons:
+	Mk3Expansion
+	VanguardTechnologies
+	WheelsCollection
+Updated for 1.7.2
+Updated AssemblyVersion.tt
+Removed ModuleManager from release
 
 3.2.3.3
-	Thanks to @Gordon-Dry for these changes:
-		Add Simple Procedural Engines (SPEngine)
-		Add ModuleConfigurableAntenna
-		Adding ROCapsules, ROEngines and ROTanks
-		Add RN Industries
+Thanks to @Gordon-Dry for these changes:
+	Add Simple Procedural Engines (SPEngine)
+	Add ModuleConfigurableAntenna
+	Adding ROCapsules, ROEngines and ROTanks
+	Add RN Industries
 
 3.2.4
-	Added InstallChecker
-	Updated for KSP 1.8
+Added InstallChecker
+Updated for KSP 1.8
 
 3.2.4.1
-	Thanks to forum user @Gordon-Dry for these:
-		Bluedog_DB fix
-		Update SubCategories_Electrical.cfg (KSP-IE quick fix)
-		Tantares fix
-		Update SubCategories_Electrical.cfg
+Thanks to forum user @Gordon-Dry for these:
+	Bluedog_DB fix
+	Update SubCategories_Electrical.cfg (KSP-IE quick fix)
+	Tantares fix
+	Update SubCategories_Electrical.cfg
 
 3.2.4.2
-	Thanks to forum user @leatherneck6017 for this:
-		Add custom check for parts that have TechHidden = True
+Thanks to forum user @leatherneck6017 for this:
+	Add custom check for parts that have TechHidden = True
 
 3.2.5
-	Thanks to user @leatherneck6017 for these:
-		Aero: Filter out ModuleCommand from Wings subcategory
-		Fuel: Add SSTUVolumeConatiner to checks
-		ISRU: Add Radiators subcategory
-		Lights: Filter out landing gear with ModuleWheelBase
-		Solar Panels: Add SSTU solar panels to check. Filter out parts with ModuleCommand and ModuleDockingNode
-		Fix typo in robotics
-		Move antennae out of science and into their own
+Thanks to user @leatherneck6017 for these:
+	Aero: Filter out ModuleCommand from Wings subcategory
+	Fuel: Add SSTUVolumeConatiner to checks
+	ISRU: Add Radiators subcategory
+	Lights: Filter out landing gear with ModuleWheelBase
+	Solar Panels: Add SSTU solar panels to check. Filter out parts with ModuleCommand and ModuleDockingNode
+	Fix typo in robotics
+	Move antennae out of science and into their own
 
 3.2.6 
-	Thanks to @Gordon-Dry for these
-		Add Hephaistos
-		Add Luciole
-		Add Dodo Labs
-		Procedural Avionics appears in Procedural Parts category
-		"SRBs" also lists parts with HTPB, PBAN and PSPC
-		"Rockets" also lists parts with Kerosene/LqdOxygen and HTP/Kerosene/LqdOxygen
-		Added subcategory "Sounding Rockets" for the fuel combo Aniline/Furfuryl/IRFNA-III
-		Added subcategory "Early Rockets" for the fuel combos Ethanol75/LqdOxygen | Ethanol75/HTP/LqdOxygen | Ethanol90/HTP/LqdOxygen | Hydyne/HTP/LqdOxygen | AK20/Kerosene
-		Added subcategory "Upper Stage Engines" for the fuel combos IWFNA/UDMH | HTP/Kerosene
-		Added subcategory "GPS" to science in favor of KerbalGPS
-		Repaired appearance in Science category
-	Thanks to github user !7ranceaddic7 for this
-		Wiki Docs Initial Commit
+Thanks to @Gordon-Dry for these
+	Add Hephaistos
+	Add Luciole
+	Add Dodo Labs
+	Procedural Avionics appears in Procedural Parts category
+	"SRBs" also lists parts with HTPB, PBAN and PSPC
+	"Rockets" also lists parts with Kerosene/LqdOxygen and HTP/Kerosene/LqdOxygen
+	Added subcategory "Sounding Rockets" for the fuel combo Aniline/Furfuryl/IRFNA-III
+	Added subcategory "Early Rockets" for the fuel combos Ethanol75/LqdOxygen | Ethanol75/HTP/LqdOxygen | Ethanol90/HTP/LqdOxygen | Hydyne/HTP/LqdOxygen | AK20/Kerosene
+	Added subcategory "Upper Stage Engines" for the fuel combos IWFNA/UDMH | HTP/Kerosene
+	Added subcategory "GPS" to science in favor of KerbalGPS
+	Repaired appearance in Science category
+Thanks to github user !7ranceaddic7 for this
+	Wiki Docs Initial Commit
 
 3.2.6.1
-	Added AssemblyFileVersion
-	Updated version file for 1.12
+Added AssemblyFileVersion
+Updated version file for 1.12
 
 3.2.7
-	Thanks to github user @MatanShahar for this:
-		Add support for Configurable Containers (ModuleTankManager)
-	Thanks to @Gordon-Dry for these:
-		fix Mod_NearFutureTechnologies.cfg
-		KopernicusSolarPanels vs. KopernicusSolarPanel
-		Overlooked internal antennas in 08_Science.cfg
-		Fix REFUSE compatibility
-		Add CRE
-		Kerbalism / parts with sample slots
-		Add RTG to SubCategories_Electrical
-		zzz_AntennaClassDescriptions fix
-		Mod_UniversalStorage
-		Mod_NearFutureTechnologies
-		Add "Eisenhower Astronautics - Stockalike Angara" to Tantares
-		SubCategories_Science
-		SubCategories_Antannae
+Thanks to github user @MatanShahar for this:
+	Add support for Configurable Containers (ModuleTankManager)
+Thanks to @Gordon-Dry for these:
+	fix Mod_NearFutureTechnologies.cfg
+	KopernicusSolarPanels vs. KopernicusSolarPanel
+	Overlooked internal antennas in 08_Science.cfg
+	Fix REFUSE compatibility
+	Add CRE
+	Kerbalism / parts with sample slots
+	Add RTG to SubCategories_Electrical
+	zzz_AntennaClassDescriptions fix
+	Mod_UniversalStorage
+	Mod_NearFutureTechnologies
+	Add "Eisenhower Astronautics - Stockalike Angara" to Tantares
+	SubCategories_Science
+	SubCategories_Antannae
 
-	3.2.7.1
-		Thanks to @Gordon-Dry for this:
-			Delete zzz_AddClassDescriptionsToAntennas.cfg (duplicate file)
+3.2.7.1
+	Thanks to @Gordon-Dry for this:
+		Delete zzz_AddClassDescriptionsToAntennas.cfg (duplicate file)
 
-	3.2.8
-		Thanks to github user @Grimmas:
-			Added separate categore for FFT
-			Added SpaceDust to NFT category
+3.2.8
+	Thanks to github user @Grimmas:
+		Added separate categore for FFT
+		Added SpaceDust to NFT category
+
+3.2.9
+	Thanks to github user @PadroneSF for this:
+		Added support for KNES
