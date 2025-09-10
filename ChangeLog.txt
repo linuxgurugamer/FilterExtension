@@ -226,3 +226,6 @@ Thanks to @Gordon-Dry for these:
 3.2.9
 	Thanks to github user @PadroneSF for this:
 		Added support for KNES
+
+3.2.9.1
+	Updated version file to use github for new version info
